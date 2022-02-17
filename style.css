@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: rgb(187, 165, 41);
+}
+
+.header {
+  text-align: center;
+  padding: 60px;
+}
+
+.box {
+  border: 5px solid white;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+
+  animation-name: boxanimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+h1 {
+  color: white;
+  animation-name: h1animation;
+  transition: all 1s ease-in-out;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  color: white;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 14pt;
+}
+
+a:hover {
+  color: rgb(0, 164, 175);
+}
+
+.main-nav {
+  align-items: center;
+}
+
+.links {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+}
+
+@keyframes boxanimation {
+  from {
+    opacity: 0;
+    margin-left: 0;
+    margin-top: 0;
+    width: 0px;
+    height: 0px;
+  }
+  to {
+    opacity: 1;
+    width: 300;
+    height: 300;
+    margin-left: -150px;
+    margin-top: -150px;
+  }
+}
